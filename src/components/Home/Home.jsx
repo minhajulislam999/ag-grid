@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Outlet, useNavigate } from 'react-router'
+import Navbar from '../Navbar/Navbar'
 
 const Home = () => {
             const naviget = useNavigate()
@@ -11,11 +12,9 @@ const Home = () => {
 
   return (
     <div>
+            <Navbar />
+
       <h1>স্বাগতম আমার Website এ</h1>
-      <Link to="/about" >About</Link>
-      <Link to="/contact" >Contact</Link>
-      <Link to="/team/dhaka" >Team Dhaka</Link>
-     
 
       <button className='btn bg-primary' onClick={handleClick}>About</button>
       <Outlet />
