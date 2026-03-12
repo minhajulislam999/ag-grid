@@ -1,14 +1,21 @@
+import React from 'react'
+import { createBrowserRouter } from "react-router";
+import Home from '../Home/Home';
+import About from '../About/About';
+import Contact from '../Contact/Contact';
 
-import { createBrowserRouter, Route } from "react-router";
 
 
-const router = createBrowserRouter ([
+      const Router = createBrowserRouter([
   {
     path: "/",
-    element: <div>amar Profile</div>
-  }
+    Component: Home,
+    children: [
+        {path: "about", Component: About},
+        {path: "contact", Component: Contact},
+    ]
+  },
+]);
+  
 
-])
-
-
-export default router
+export default Router
