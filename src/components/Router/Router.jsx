@@ -5,6 +5,7 @@ import About from '../About/About';
 import Contact from '../Contact/Contact';
 import { Component } from 'react';
 import Team from '../Team/Team';
+import User from '../User/User';
 
 
 
@@ -18,6 +19,10 @@ const Router = createBrowserRouter([
     ]
   },
 
+  {
+    path: "/user",
+    Component: User
+  },
   {
     path: '/team/:teamId',
     loader: ({params}) =>{
