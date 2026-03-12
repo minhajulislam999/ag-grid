@@ -8,6 +8,7 @@ function Navbar() {
          <Link to = "/about" >About</Link>
       <Link to="/contact" >Contact</Link>
       <Link to="/team/dhaka" >Team Dhaka</Link>
+      <Link to="/form">Form</Link>
     </div>
   )
 }

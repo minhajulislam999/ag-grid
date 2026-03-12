@@ -6,6 +6,7 @@ import Contact from '../Contact/Contact';
 import { Component } from 'react';
 import Team from '../Team/Team';
 import User from '../User/User';
+import Form from '../Form/Form';
 
 
 
@@ -22,6 +23,10 @@ const Router = createBrowserRouter([
   {
     path: "/user",
     Component: User
+  },
+  {
+    path: '/form',
+    Component: Form
   },
   {
     path: '/team/:teamId',
