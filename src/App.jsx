@@ -4,6 +4,7 @@ import { RouterProvider } from "react-router/dom";
 import abcd from './components/Router/Router';
 import User from './components/User/User';
 import Form from './components/Form/Form';
+import { UserContext } from './components/userContext/UseContext';
 
 
 
@@ -12,7 +13,7 @@ import Form from './components/Form/Form';
 function App() {
 
   return (
-    <>
+    <UserContext.Provider value={{name: "rahim", age: 22}}>
             <RouterProvider router={abcd}/>
 
 
@@ -21,7 +22,7 @@ function App() {
       <Form />
 
       
-    </>
+    </UserContext.Provider>
   )
 }
 
