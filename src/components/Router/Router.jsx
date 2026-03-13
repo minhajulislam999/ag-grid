@@ -7,6 +7,7 @@ import { Component } from 'react';
 import Team from '../Team/Team';
 import User from '../User/User';
 import Form from '../Form/Form';
+import Login from '../Login/Login';
 
 
 
@@ -27,6 +28,10 @@ const Router = createBrowserRouter([
   {
     path: '/form',
     Component: Form
+  },
+  {
+    path: "/login",
+    Component: Login
   },
   {
     path: '/team/:teamId',

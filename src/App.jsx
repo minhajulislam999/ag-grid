@@ -15,8 +15,6 @@ function App() {
   return (
     <UserContext.Provider value={{name: "rahim", age: 22}}>
             <RouterProvider router={abcd}/>
-
-
       <User/>
 
       <Form />
